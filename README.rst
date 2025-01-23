@@ -161,6 +161,9 @@ Global Biobank Meta-analysis Initiative:https://www.globalbiobankmeta.org
 
 `Zhou W, Kanai M, Wu K H H, et al. Global Biobank Meta-analysis Initiative: Powering genetic discovery across human disease[J]. Cell Genomics, 2022, 2(10). <https://www.cell.com/cell-genomics/pdf/S2666-979X(22)00141-0.pdf>`_
 
+BRaVa: Biobank Rare Variant Analysis:https://brava-genetics.github.io/BRaVa/
+########################################################################################################################################
+.. image:: png/BRaVa.png
 
 Method
 ########################################################################################################################################
