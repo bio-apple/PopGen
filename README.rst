@@ -169,6 +169,10 @@ CNV 关联分析
 ########################################################################################################################################
 `Zou X Z, Hu F, Lou H, et al. Phenome-wide analysis of copy number variants in 470,727 UK Biobank genomes[J]. Nature, 2026: 1-11. <https://www.nature.com/articles/s41586-025-10087-x>`_
 
+`Wang H, Dombroski B A, Cheng P L, et al. Structural variation detection and association analysis of whole‐genome‐sequence data from 16,543 Alzheimer's disease sequencing project subjects[J]. Alzheimer's & Dementia, 2025, 21(6): e70277. <https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.70277?af=R>`_
+
+`Lee W P, Tucci A A, Conery M, et al. Copy number variation identification on 3,800 Alzheimer’s disease whole genome sequencing data from the Alzheimer’s disease sequencing project[J]. Frontiers in genetics, 2021, 12: 752390. <https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2021.752390/full>`_
+
 Method
 ########################################################################################################################################
 `WES-biobank </WES/>`_
