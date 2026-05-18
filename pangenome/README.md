@@ -77,3 +77,5 @@ sambamba-1.0.1-linux-amd64-static view -t 36 -f bam -s 0.1313 -o out.bam in.bam
 [Gao Y, Yang X, Chen H, et al. A pangenome reference of 36 Chinese populations[J]. Nature, 2023: 1-10.](https://www.nature.com/articles/s41586-023-06173-7)
 
 [Liao W W, Asri M, Ebler J, et al. A draft human pangenome reference[J]. Nature, 2023, 617(7960): 312-324.](https://www.nature.com/articles/s41586-023-05896-x)
+
+[Wang Y, Duan Z, Chen D, et al. The 1000 Chinese Pangenome empowers medical and population genetics[J]. Nature, 2026: 1-10.](https://www.nature.com/articles/s41586-026-10315-y)
