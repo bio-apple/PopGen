@@ -77,6 +77,10 @@ All of US:https://allofus.nih.gov
 
 `Lennon N J, Kottyan L C, Kachulis C, et al. Selection, optimization and validation of ten chronic disease polygenic risk scores for clinical implementation in diverse US populations[J]. Nature Medicine, 2024: 1-8. <https://www.nature.com/articles/s41591-024-02796-z#Sec10>`_
 
+Hong Kong Genome Project
+########################################################################################################################################
+`Ying D, Cheung C L, Lam W K J, et al. Population-scale genomic medicine with the Hong Kong Genome Project[J]. Nature Medicine, 2026: 1-11. <https://www.nature.com/articles/s41591-026-04410-w>`_
+
 PRECISE:https://www.npm.sg
 ########################################################################################################################################
 .. image:: png/Singapore.png
