@@ -1,5 +1,7 @@
 STR
 #########
+`Manigbas C A, Jadhav B, Garg P, et al. A phenome-wide association study of tandem repeat variation in 168,554 individuals from the UK Biobank[J]. Nature Communications, 2024, 15(1): 10521. <https://www.nature.com/articles/s41467-024-54678-0>`_
+
 `Shi Y, Niu Y, Zhang P, et al. Characterization of genome-wide STR variation in 6487 human genomes[J]. Nature Communications, 2023, 14(1): 2092. <https://www.nature.com/articles/s41467-023-37690-8>`_
 
 `Li Y, DeVito R, Mousavi N, et al. A deep population reference panel of tandem repeat variation[J]. Nature Communications, 2023, 14(1): 6711-6711. <https://www.nature.com/articles/s41467-023-42278-3>`_
