@@ -173,7 +173,7 @@ Lessons from national biobank projects
 ########################################################################################################################################
 .. image:: png/Lessons_from_national_biobank_projects.png
 
-.. image:: png/Overview_of_genomic _esources_in_the_national_biobanks.png
+.. image:: png/Overview_of_genomic_esources_in_the_national_biobanks.png
 
 `Lee H, Kim W, Kwon N, et al. Lessons from national biobank projects utilizing whole-genome sequencing for population-scale genomics[J]. Genomics & Informatics, 2025, 23(1): 8. <https://link.springer.com/article/10.1186/s44342-025-00040-9>`_
 
