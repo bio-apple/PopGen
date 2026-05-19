@@ -177,6 +177,14 @@ CNV 关联分析
 
 `Lee W P, Tucci A A, Conery M, et al. Copy number variation identification on 3,800 Alzheimer’s disease whole genome sequencing data from the Alzheimer’s disease sequencing project[J]. Frontiers in genetics, 2021, 12: 752390. <https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2021.752390/full>`_
 
+数据存储与压缩
+########################################################################################################################################
+**VCF to aGDS (vcf2agds):** https://github.com/drarwood/vcf2agds_overview
+
+`Li X, Wood A R, Yuan Y, et al. Streamlining large-scale genomic data management: Insights from the UK Biobank whole-genome sequencing data[J]. Cell Genomics, 2025, 5(12). <https://www.cell.com/cell-genomics/fulltext/S2666-979X(25)00265-4>`_
+
+
+
 Method
 ########################################################################################################################################
 `WES-biobank </WES/>`_
