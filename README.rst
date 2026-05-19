@@ -201,8 +201,6 @@ Rare variant
 
 `Ribeiro D M, Hofmeister R J, Rubinacci S, et al. Noncoding rare variant associations with blood traits in 166,740 UK Biobank genomes[J]. Nature Genetics, 2025, 57(9): 2146-2155. <https://www.nature.com/articles/s41588-025-02288-x>`_
 
-
-
 Method
 ########################################################################################################################################
 `WES-biobank </WES/>`_
