@@ -169,6 +169,10 @@ BRaVa: Biobank Rare Variant Analysis:https://brava-genetics.github.io/BRaVa/
 ########################################################################################################################################
 .. image:: png/BRaVa.png
 
+Lessons from national biobank projects
+########################################################################################################################################
+`Lee H, Kim W, Kwon N, et al. Lessons from national biobank projects utilizing whole-genome sequencing for population-scale genomics[J]. Genomics & Informatics, 2025, 23(1): 8. <https://link.springer.com/article/10.1186/s44342-025-00040-9>`_
+
 CNV 关联分析
 ########################################################################################################################################
 `Zou X Z, Hu F, Lou H, et al. Phenome-wide analysis of copy number variants in 470,727 UK Biobank genomes[J]. Nature, 2026: 1-11. <https://www.nature.com/articles/s41586-025-10087-x>`_
@@ -188,6 +192,7 @@ Rare variant
 `Jurgens S J, Wang X, Choi S H, et al. Rare coding variant analysis for human diseases across biobanks and ancestries[J]. Nature Genetics, 2024, 56(9): 1811-1820. <https://www.nature.com/articles/s41588-024-01894-5>`_
 
 `Ribeiro D M, Hofmeister R J, Rubinacci S, et al. Noncoding rare variant associations with blood traits in 166,740 UK Biobank genomes[J]. Nature Genetics, 2025, 57(9): 2146-2155. <https://www.nature.com/articles/s41588-025-02288-x>`_
+
 
 
 Method
