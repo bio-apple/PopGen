@@ -191,6 +191,10 @@ CNV 关联分析
 
 `Li X, Wood A R, Yuan Y, et al. Streamlining large-scale genomic data management: Insights from the UK Biobank whole-genome sequencing data[J]. Cell Genomics, 2025, 5(12). <https://www.cell.com/cell-genomics/fulltext/S2666-979X(25)00265-4>`_
 
+**Hail:two implementations of SVCR: SVCR-VCF, which encodes SVCR in VCF format, and VDS, which uses Hail’s native format.** https://github.com/hail-is/hail/
+
+.. image:: data_storage/SVR.jpeg
+
 `Poterba T, Vittal C, King D, et al. The scalable variant call representation: enabling genetic analysis beyond one million genomes[J]. Bioinformatics, 2025, 41(1): btae746. <https://doi.org/10.1093/bioinformatics/btae746>`_
 
 `Al Ali A, Kandavel P K, Al Mabrazi H, et al. CRAM compression: practical across-technologies considerations for large-scale sequencing projects[J]. bioRxiv, 2022: 2022.12. 21.521516. <https://www.biorxiv.org/content/10.1101/2022.12.21.521516v1.full>`_
