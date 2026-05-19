@@ -191,6 +191,8 @@ CNV 关联分析
 
 `Li X, Wood A R, Yuan Y, et al. Streamlining large-scale genomic data management: Insights from the UK Biobank whole-genome sequencing data[J]. Cell Genomics, 2025, 5(12). <https://www.cell.com/cell-genomics/fulltext/S2666-979X(25)00265-4>`_
 
+`Poterba T, Vittal C, King D, et al. The scalable variant call representation: enabling genetic analysis beyond one million genomes[J]. Bioinformatics, 2025, 41(1): btae746. <https://doi.org/10.1093/bioinformatics/btae746>`_
+
 Rare variant
 ########################################################################################################################################
 `Jurgens S J, Wang X, Choi S H, et al. Rare coding variant analysis for human diseases across biobanks and ancestries[J]. Nature Genetics, 2024, 56(9): 1811-1820. <https://www.nature.com/articles/s41588-024-01894-5>`_
