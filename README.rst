@@ -195,6 +195,10 @@ CNV 关联分析
 
 .. image:: data_storage/SVR.jpeg
 
+.. image:: data_storage/SVR_VCF2PVCF.jpeg
+
+Scaling of dataset size of sequenced whole genomes represented in Hail LZ4-compressed VDS, gzip-compressed SVCR-VCF and gzip-compressed PVCF. In (a) total size in Gibibytes is plotted on the y axis, and in (b), plotting the size per sample (total size divided by number of samples) provides a clear view of the super-linear scaling of PVCF.
+
 `Poterba T, Vittal C, King D, et al. The scalable variant call representation: enabling genetic analysis beyond one million genomes[J]. Bioinformatics, 2025, 41(1): btae746. <https://doi.org/10.1093/bioinformatics/btae746>`_
 
 `Al Ali A, Kandavel P K, Al Mabrazi H, et al. CRAM compression: practical across-technologies considerations for large-scale sequencing projects[J]. bioRxiv, 2022: 2022.12. 21.521516. <https://www.biorxiv.org/content/10.1101/2022.12.21.521516v1.full>`_
