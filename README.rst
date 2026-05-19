@@ -183,6 +183,11 @@ CNV 关联分析
 
 `Li X, Wood A R, Yuan Y, et al. Streamlining large-scale genomic data management: Insights from the UK Biobank whole-genome sequencing data[J]. Cell Genomics, 2025, 5(12). <https://www.cell.com/cell-genomics/fulltext/S2666-979X(25)00265-4>`_
 
+Rare variant
+########################################################################################################################################
+`Jurgens S J, Wang X, Choi S H, et al. Rare coding variant analysis for human diseases across biobanks and ancestries[J]. Nature Genetics, 2024, 56(9): 1811-1820. <https://www.nature.com/articles/s41588-024-01894-5>`_
+
+`Ribeiro D M, Hofmeister R J, Rubinacci S, et al. Noncoding rare variant associations with blood traits in 166,740 UK Biobank genomes[J]. Nature Genetics, 2025, 57(9): 2146-2155. <https://www.nature.com/articles/s41588-025-02288-x>`_
 
 
 Method
