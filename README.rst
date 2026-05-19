@@ -193,6 +193,8 @@ CNV 关联分析
 
 `Poterba T, Vittal C, King D, et al. The scalable variant call representation: enabling genetic analysis beyond one million genomes[J]. Bioinformatics, 2025, 41(1): btae746. <https://doi.org/10.1093/bioinformatics/btae746>`_
 
+`Al Ali A, Kandavel P K, Al Mabrazi H, et al. CRAM compression: practical across-technologies considerations for large-scale sequencing projects[J]. bioRxiv, 2022: 2022.12. 21.521516. <https://www.biorxiv.org/content/10.1101/2022.12.21.521516v1.full>`_
+
 Rare variant
 ########################################################################################################################################
 `Jurgens S J, Wang X, Choi S H, et al. Rare coding variant analysis for human diseases across biobanks and ancestries[J]. Nature Genetics, 2024, 56(9): 1811-1820. <https://www.nature.com/articles/s41588-024-01894-5>`_
