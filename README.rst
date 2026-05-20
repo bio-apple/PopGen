@@ -55,6 +55,8 @@ UK Biobank:https://www.ukbiobank.ac.uk
 ########################################################################################################################################
 .. image:: png/genetic-data-sept2022.jpg
 
+`Pre-loaded software in the UKB-RAP: <https://community.ukbiobank.ac.uk/hc/en-gb/articles/19459498669981-Pre-loaded-software-in-the-UKB-RAP>`_
+
 `UK Biobank Allele Frequency Browser：https://afb.ukbiobank.ac.uk/ <https://afb.ukbiobank.ac.uk/>`_
 
 `UK Biobank Whole-Genome Sequencing Consortium, Li S, Carss K J, et al. Whole-genome sequencing of half-a-million UK Biobank participants[J]. medRxiv, 2023: 2023.12. 06.23299426. <https://www.medrxiv.org/content/10.1101/2023.12.06.23299426v1>`_
@@ -95,7 +97,8 @@ PRECISE:https://www.npm.sg
 
 `Call for Proposals – Driver Projects for the PRECISE-SG100K Dataset:https://www.npm.sg/research/call-for-proposals/ <https://www.npm.sg/research/call-for-proposals/>`_
 
-`“Call for Proposals” meeting:https://file.for.sg/sg100k-cfp.pdf <https://file.for.sg/sg100k-cfp.pdf>`_
+`“Call
+for Proposals” meeting:https://file.for.sg/sg100k-cfp.pdf <https://file.for.sg/sg100k-cfp.pdf>`_
 
 China
 ########################################################################################################################################
