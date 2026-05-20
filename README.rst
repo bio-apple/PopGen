@@ -55,7 +55,7 @@ UK Biobank:https://www.ukbiobank.ac.uk
 ########################################################################################################################################
 .. image:: png/genetic-data-sept2022.jpg
 
-`Pre-loaded software in the UKB-RAP: <https://community.ukbiobank.ac.uk/hc/en-gb/articles/19459498669981-Pre-loaded-software-in-the-UKB-RAP>`_
+`Pre-loaded software in the UKB-RAP: https://community.ukbiobank.ac.uk/hc/en-gb/articles/19459498669981-Pre-loaded-software-in-the-UKB-RAP <https://community.ukbiobank.ac.uk/hc/en-gb/articles/19459498669981-Pre-loaded-software-in-the-UKB-RAP>`_
 
 `UK Biobank Allele Frequency Browser：https://afb.ukbiobank.ac.uk/ <https://afb.ukbiobank.ac.uk/>`_
 
