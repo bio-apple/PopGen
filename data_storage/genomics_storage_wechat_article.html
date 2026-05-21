@@ -1,0 +1,385 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+.art{font-family:'Noto Sans SC',sans-serif;color:var(--color-text-primary);line-height:1.8;max-width:680px}
+
+/* HERO */
+.hero{background:#0C447C;padding:2.4rem 2rem 2rem;border-radius:var(--border-radius-lg);margin-bottom:2rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50px;right:-50px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.05)}
+.hero::after{content:'';position:absolute;bottom:-70px;left:-30px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.04)}
+.hero-kicker{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);color:#85B7EB;font-size:11px;padding:4px 12px;border-radius:20px;margin-bottom:1.1rem;letter-spacing:1px}
+.hero h1{font-family:'Noto Serif SC',serif;font-size:23px;font-weight:700;color:#fff;line-height:1.5;margin-bottom:.8rem;position:relative;z-index:1}
+.hero-desc{font-size:13px;color:#85B7EB;position:relative;z-index:1;line-height:1.7}
+
+/* META */
+.meta{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--color-text-secondary);margin-bottom:1.6rem;padding-bottom:1rem;border-bottom:.5px solid var(--color-border-tertiary)}
+.meta span{display:flex;align-items:center;gap:4px}
+
+/* PAPER TAGS */
+.paper-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:2rem}
+.ptag{display:flex;align-items:center;gap:6px;padding:6px 12px;border-radius:var(--border-radius-md);border:.5px solid;font-size:12px;font-weight:500}
+.ptag.p1{background:#E6F1FB;border-color:#85B7EB;color:#185FA5}
+.ptag.p2{background:#EAF3DE;border-color:#97C459;color:#3B6D11}
+.ptag.p3{background:#FAEEDA;border-color:#EF9F27;color:#854F0B}
+
+/* SECTION TITLE */
+.st{font-family:'Noto Serif SC',serif;font-size:18px;font-weight:600;color:var(--color-text-primary);margin:2rem 0 .9rem;padding-left:12px;border-left:3px solid #378ADD;line-height:1.4}
+p{font-size:15px;line-height:1.9;color:var(--color-text-primary);margin-bottom:1rem}
+
+/* PIPELINE */
+.pipeline{display:flex;align-items:stretch;gap:0;margin:1.5rem 0;overflow-x:auto}
+.pipe-step{flex:1;min-width:0;background:var(--color-background-primary);border:.5px solid var(--color-border-tertiary);padding:.9rem .8rem;text-align:center;position:relative}
+.pipe-step:first-child{border-radius:var(--border-radius-md) 0 0 var(--border-radius-md)}
+.pipe-step:last-child{border-radius:0 var(--border-radius-md) var(--border-radius-md) 0}
+.pipe-step+.pipe-step::before{content:'→';position:absolute;left:-10px;top:50%;transform:translateY(-50%);font-size:12px;color:var(--color-text-secondary);z-index:2;background:var(--color-background-primary);padding:0 2px}
+.pipe-step .ps-fmt{font-size:12px;font-weight:700;margin-bottom:3px}
+.pipe-step .ps-size{font-size:11px;color:var(--color-text-secondary)}
+.pipe-step.highlight{background:#E6F1FB;border-color:#85B7EB}
+.pipe-step.highlight .ps-fmt{color:#185FA5}
+.pipe-step.highlight2{background:#EAF3DE;border-color:#97C459}
+.pipe-step.highlight2 .ps-fmt{color:#3B6D11}
+
+/* THREE PAPERS CARDS */
+.paper-grid{display:grid;grid-template-columns:1fr;gap:1rem;margin:1.5rem 0}
+.paper-card{border-radius:var(--border-radius-lg);border:.5px solid var(--color-border-tertiary);overflow:hidden}
+.pc-head{padding:.9rem 1.2rem;display:flex;align-items:flex-start;gap:10px}
+.pc-num{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;margin-top:2px}
+.pc-num.n1{background:#E6F1FB;color:#185FA5}
+.pc-num.n2{background:#EAF3DE;color:#3B6D11}
+.pc-num.n3{background:#FAEEDA;color:#854F0B}
+.pc-title{font-size:14px;font-weight:500;color:var(--color-text-primary);line-height:1.4}
+.pc-source{font-size:11px;color:var(--color-text-secondary);margin-top:3px}
+.pc-body{padding:.8rem 1.2rem 1.1rem 1.2rem;background:var(--color-background-secondary)}
+.pc-body p{font-size:13px;line-height:1.7;color:var(--color-text-secondary);margin:0 0 .6rem}
+.pc-body p:last-child{margin:0}
+
+/* HIGHLIGHT BOX */
+.hbox{border-left:3px solid #378ADD;background:var(--color-background-secondary);border-radius:0 var(--border-radius-md) var(--border-radius-md) 0;padding:1rem 1.2rem;margin:1.2rem 0;font-size:14px;color:var(--color-text-secondary)}
+.hbox strong{color:var(--color-text-primary);font-weight:500}
+
+/* ALERT RED */
+.rbox{border-left:3px solid #E24B4A;background:#FCEBEB;border-radius:0 var(--border-radius-md) var(--border-radius-md) 0;padding:1rem 1.2rem;margin:1.2rem 0}
+.rbox p{font-size:14px;color:#A32D2D;margin:0;font-style:italic}
+
+/* STAT ROW */
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:1.2rem 0}
+.stat-card{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:1rem .7rem;text-align:center}
+.stat-num{font-size:20px;font-weight:700;color:#185FA5;line-height:1;margin-bottom:.3rem}
+.stat-lbl{font-size:11px;color:var(--color-text-secondary);line-height:1.4}
+
+/* COMPARISON TABLE STYLE */
+.cmp{margin:1.4rem 0;border-radius:var(--border-radius-lg);overflow:hidden;border:.5px solid var(--color-border-tertiary)}
+.cmp-head{display:grid;grid-template-columns:130px 1fr 1fr 1fr;background:var(--color-background-secondary);font-size:12px;font-weight:500;color:var(--color-text-secondary)}
+.cmp-head div,.cmp-row div{padding:.6rem .7rem}
+.cmp-row{display:grid;grid-template-columns:130px 1fr 1fr 1fr;border-top:.5px solid var(--color-border-tertiary);font-size:12px;background:var(--color-background-primary)}
+.cmp-row:nth-child(odd){background:var(--color-background-secondary)}
+.cmp-row div:first-child{color:var(--color-text-secondary);font-weight:500}
+.badge{display:inline-block;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:500}
+.badge.g{background:#EAF3DE;color:#3B6D11}
+.badge.r{background:#FCEBEB;color:#A32D2D}
+.badge.y{background:#FAEEDA;color:#854F0B}
+
+/* WORKFLOW */
+.wf{display:grid;grid-template-columns:1fr;gap:8px;margin:1.2rem 0}
+.wf-step{display:flex;align-items:flex-start;gap:12px;background:var(--color-background-primary);border:.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:.8rem 1rem}
+.wf-num{width:24px;height:24px;border-radius:50%;background:#E6F1FB;color:#185FA5;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;margin-top:2px}
+.wf-content h4{font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:3px}
+.wf-content p{font-size:12px;color:var(--color-text-secondary);margin:0;line-height:1.6}
+
+/* KEY POINT */
+.kp{background:#E6F1FB;border-radius:var(--border-radius-lg);padding:1.2rem 1.4rem;margin:1.2rem 0}
+.kp-lbl{font-size:11px;font-weight:700;color:#185FA5;letter-spacing:1.5px;margin-bottom:.5rem}
+.kp p{font-size:14px;color:#0C447C;margin:0}
+
+/* STORAGE VIZ */
+.sviz{margin:1.2rem 0}
+.sviz-row{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.sviz-lbl{font-size:12px;color:var(--color-text-secondary);width:90px;flex-shrink:0;text-align:right}
+.sviz-bar-bg{flex:1;background:var(--color-background-secondary);border-radius:4px;height:24px;overflow:hidden}
+.sviz-bar{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:8px;font-size:11px;font-weight:500}
+.sviz-bar.r{background:#F09595;color:#A32D2D}
+.sviz-bar.g{background:#C0DD97;color:#3B6D11}
+.sviz-bar.b{background:#85B7EB;color:#0C447C}
+.sviz-bar.y{background:#FAC775;color:#854F0B}
+
+/* CONCLUSION */
+.conclusion{background:linear-gradient(135deg,#0C447C,#185FA5);border-radius:var(--border-radius-lg);padding:1.8rem;margin-top:2rem}
+.conclusion h3{font-family:'Noto Serif SC',serif;font-size:17px;font-weight:600;color:#fff;margin-bottom:.8rem}
+.conclusion p{font-size:14px;color:#85B7EB;margin:0;line-height:1.8}
+.conclusion .c-sub{font-size:13px;color:#B5D4F4;margin-top:.6rem}
+
+/* TAGS */
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.5rem}
+.tag{font-size:12px;background:var(--color-background-secondary);color:var(--color-text-secondary);padding:4px 10px;border-radius:20px;border:.5px solid var(--color-border-tertiary)}
+
+hr{border:none;border-top:.5px solid var(--color-border-tertiary);margin:1.5rem 0}
+</style>
+
+<div class="art">
+
+<div class="hero">
+  <div class="hero-kicker"><i class="ti ti-dna" aria-hidden="true"></i> 生信基础设施 · 三篇文献综合解读</div>
+  <h1>从读取到存储再到分析：<br>大规模基因组数据的全链路革命</h1>
+  <div class="hero-desc">当测序样本突破百万大关，每一个环节的格式与工具选择都是一场关乎科学效率的工程决战</div>
+</div>
+
+<div class="meta">
+  <span><i class="ti ti-file-text" aria-hidden="true"></i> 三篇文献综述</span>
+  <span><i class="ti ti-building" aria-hidden="true"></i> Broad · EGP · UK Biobank</span>
+  <span><i class="ti ti-calendar" aria-hidden="true"></i> 2022–2025</span>
+</div>
+
+<div class="paper-tags">
+  <div class="ptag p1"><i class="ti ti-number-1" aria-hidden="true"></i> SVCR · Bioinformatics 2025</div>
+  <div class="ptag p2"><i class="ti ti-number-2" aria-hidden="true"></i> CRAM压缩 · bioRxiv 2022</div>
+  <div class="ptag p3"><i class="ti ti-number-3" aria-hidden="true"></i> vcf2agds · Cell Genomics 2025</div>
+</div>
+
+<h2 class="st">引言：百万基因组时代的数据焦虑</h2>
+
+<p>今天的基因组学正在进入一个前所未有的规模时代。TOPMed 已完成约 20 万人全基因组测序，NIH All of Us 项目逼近 25 万，英国生物样本库（UK Biobank）已达 50 万人，阿联酋基因组计划（EGP）更是立志完成全国 100 万人的测序工程。</p>
+
+<p>规模带来了科学机遇，也带来了极其现实的数据困境：一个 15 万人的 VCF 文件估算体积高达 900 TiB；50 万人的 UK Biobank WGS 联合变异数据占用超过 1473 TiB；EGP 25 万份基因组的所有原始文件若同时存在，存储需求将达 140 PB。</p>
+
+<div class="rbox"><p>数据存储的成本与复杂度，正在成为制约大规模遗传学研究的隐形天花板。格式革命不再是锦上添花，而是刻不容缓。</p></div>
+
+<p>本文综合解读三篇发表于顶级期刊/预印本的研究，它们分别从<strong>变异存储格式（SVCR）</strong>、<strong>比对文件压缩（CRAM）</strong>和<strong>分析就绪格式转换（vcf2agds）</strong>三个维度，共同勾勒出大规模基因组数据全链路管理的技术图景。</p>
+
+<hr>
+
+<h2 class="st">数据流全链路：问题在哪里？</h2>
+
+<p>一条完整的 WGS 分析流程，会在不同阶段产生不同格式的数据文件，每一环都有其存储痛点：</p>
+
+<div class="pipeline">
+  <div class="pipe-step">
+    <div class="ps-fmt">FASTQ</div>
+    <div class="ps-size">原始测序读段</div>
+  </div>
+  <div class="pipe-step highlight">
+    <div class="ps-fmt">BAM/CRAM</div>
+    <div class="ps-size">比对文件 ← 论文②</div>
+  </div>
+  <div class="pipe-step">
+    <div class="ps-fmt">gVCF</div>
+    <div class="ps-size">单样本变异</div>
+  </div>
+  <div class="pipe-step highlight">
+    <div class="ps-fmt">pVCF/SVCR</div>
+    <div class="ps-size">联合变异 ← 论文①</div>
+  </div>
+  <div class="pipe-step highlight2">
+    <div class="ps-fmt">aGDS</div>
+    <div class="ps-size">分析就绪 ← 论文③</div>
+  </div>
+</div>
+
+<p>三篇文献恰好各守一环，相互呼应，共同构成了从原始数据到分析就绪的完整解决方案。</p>
+
+<hr>
+
+<h2 class="st">论文①：SVCR——终结 VCF 的超线性膨胀</h2>
+
+<div class="paper-grid">
+  <div class="paper-card">
+    <div class="pc-head">
+      <div class="pc-num n1">①</div>
+      <div>
+        <div class="pc-title">The scalable variant call representation: enabling genetic analysis beyond one million genomes</div>
+        <div class="pc-source">Poterba et al. · Bioinformatics 2025 · Broad Institute / MIT / Harvard</div>
+      </div>
+    </div>
+    <div class="pc-body">
+      <p>VCF 格式要求以密集矩阵记录所有样本在每个变异位点上的基因型，导致文件大小随样本量呈超线性增长——实测约正比于样本数的平方根次方，越到后期每新增一个样本的边际存储成本越高。</p>
+      <p>SVCR（可扩展变异调用表示）通过两项关键技术实现严格线性增长：① 本地等位基因索引（Local Allele Indices），每个样本只记录自身观测到的等位基因；② 参考区块（Reference Blocks），沿用自 GVCF，将连续参考型区间合并存储。</p>
+    </div>
+  </div>
+</div>
+
+<p>SVCR 同时具备三大工程特性：<strong>无损（Lossless）</strong>保证数据完整性；<strong>可合并（Mergeable）</strong>支持 N+1 和 N+K 增量联合调用，无需重处理全队列；<strong>样本并行</strong>可分布式生成，天然适配云计算架构。</p>
+
+<p>论文给出了两种实现：SVCR-VCF（兼容现有工具链）和 VDS（基于 Hail 原生格式，配套 VDS Combiner 开源工具）。实验在近百万外显子组序列上完成了实证验证。</p>
+
+<div class="sviz">
+  <div class="sviz-row">
+    <div class="sviz-lbl">pVCF · 1万人</div>
+    <div class="sviz-bar-bg"><div class="sviz-bar r" style="width:18%">超线性</div></div>
+  </div>
+  <div class="sviz-row">
+    <div class="sviz-lbl">SVCR · 1万人</div>
+    <div class="sviz-bar-bg"><div class="sviz-bar g" style="width:12%">线性</div></div>
+  </div>
+  <div class="sviz-row">
+    <div class="sviz-lbl">pVCF · 15万人</div>
+    <div class="sviz-bar-bg"><div class="sviz-bar r" style="width:88%">≈900 TiB（估算）</div></div>
+  </div>
+  <div class="sviz-row">
+    <div class="sviz-lbl">SVCR · 15万人</div>
+    <div class="sviz-bar-bg"><div class="sviz-bar g" style="width:32%">大幅压缩</div></div>
+  </div>
+</div>
+
+<hr>
+
+<h2 class="st">论文②：CRAM——多平台读段文件的压缩实测</h2>
+
+<div class="paper-grid">
+  <div class="paper-card">
+    <div class="pc-head">
+      <div class="pc-num n2">②</div>
+      <div>
+        <div class="pc-title">CRAM compression: practical across-technologies considerations for large-scale sequencing projects</div>
+        <div class="pc-source">Emirati Genome Program · bioRxiv 2022</div>
+      </div>
+    </div>
+    <div class="pc-body">
+      <p>CRAM 是 BAM 的进一步压缩格式，通过参考序列重编码将比对数据的冗余大幅削减。该研究在三种主流测序平台（Illumina、MGI、Oxford Nanopore ONT）上系统评估了 CRAM 的实际表现，填补了跨平台比较数据的空白。</p>
+      <p>核心发现：CRAM 压缩率随平台不同在 40%–70% 之间波动；压缩过程完全无损，不影响下游变异调用结果；云端单 CPU 压缩速度为 0.7–1.4 GB/分钟，即 30× WGS 样本约需 1–2 小时。</p>
+    </div>
+  </div>
+</div>
+
+<p>研究来源于阿联酋基因组计划（EGP）的实际工程需求：若同时保存 25 万份基因组的所有中间文件，将消耗高达 140 PB 的存储空间。EGP 最终确立了"仅长期保留 CRAM + (g)VCF"的两层存储策略，大幅降低了基础设施成本。</p>
+
+<div class="cmp">
+  <div class="cmp-head">
+    <div>指标</div>
+    <div>Illumina</div>
+    <div>MGI</div>
+    <div>ONT（长读长）</div>
+  </div>
+  <div class="cmp-row">
+    <div>CRAM压缩率</div>
+    <div><span class="badge g">~60–70%</span></div>
+    <div><span class="badge g">~50–60%</span></div>
+    <div><span class="badge y">~40–50%</span></div>
+  </div>
+  <div class="cmp-row">
+    <div>是否无损</div>
+    <div><span class="badge g">是</span></div>
+    <div><span class="badge g">是</span></div>
+    <div><span class="badge g">是</span></div>
+  </div>
+  <div class="cmp-row">
+    <div>影响变异调用</div>
+    <div><span class="badge g">否</span></div>
+    <div><span class="badge g">否</span></div>
+    <div><span class="badge g">否</span></div>
+  </div>
+  <div class="cmp-row">
+    <div>单CPU压缩速度</div>
+    <div colspan="3" style="color:var(--color-text-secondary)">0.7–1.4 GB/min（~30× 样本 1–2 小时）</div>
+  </div>
+</div>
+
+<div class="hbox">
+  <strong>实践意义：</strong>对于同时使用多种测序平台的项目，CRAM 表现出良好的跨平台适用性，且压缩收益在短读长平台上更为显著。CRAM 可与 gVCF 组合，作为大型队列项目的标准长期存储方案。
+</div>
+
+<hr>
+
+<h2 class="st">论文③：vcf2agds——从存储到分析的最后一公里</h2>
+
+<div class="paper-grid">
+  <div class="paper-card">
+    <div class="pc-head">
+      <div class="pc-num n3">③</div>
+      <div>
+        <div class="pc-title">Streamlining large-scale genomic data management: Insights from the UK Biobank whole-genome sequencing data</div>
+        <div class="pc-source">Li, Wood et al. · Cell Genomics 2025 · UNC / Harvard / Exeter / 东北师范大学</div>
+      </div>
+    </div>
+    <div class="pc-body">
+      <p>UK Biobank 50 万人 WGS 联合变异数据以 151,561 个 pVCF 分块文件发布，合计 1,473.85 TiB，格式复杂、体积庞大，严重阻碍了下游分析效率。研究团队提出 vcf2agds 工具包，将 VCF 转换为注释基因组数据结构（aGDS）格式。</p>
+      <p>aGDS 在大幅压缩存储空间的同时，支持无缝整合基因组注释和功能信息，直接对接 STAARpipeline 进行全面的稀有变异和常见变异关联分析。</p>
+    </div>
+  </div>
+</div>
+
+<p>vcf2agds 工具包的核心工作流分为四步：</p>
+
+<div class="wf">
+  <div class="wf-step">
+    <div class="wf-num">1</div>
+    <div class="wf-content">
+      <h4>VCF 精简（vcf_trimmer）</h4>
+      <p>使用 bcftools 去除冗余字段，应用质量过滤（如排除 AAscore &lt; 0.5 的低质量变异）</p>
+    </div>
+  </div>
+  <div class="wf-step">
+    <div class="wf-num">2</div>
+    <div class="wf-content">
+      <h4>VCF 合并</h4>
+      <p>将分块的 pVCF 文件按染色体合并，便于后续统一处理</p>
+    </div>
+  </div>
+  <div class="wf-step">
+    <div class="wf-num">3</div>
+    <div class="wf-content">
+      <h4>格式转换（VCF → aGDS）</h4>
+      <p>将合并后的 VCF 转换为 aGDS 格式，实现极致压缩并嵌入功能注释</p>
+    </div>
+  </div>
+  <div class="wf-step">
+    <div class="wf-num">4</div>
+    <div class="wf-content">
+      <h4>变异注释</h4>
+      <p>整合功能注释信息，输出可直接用于 STAARpipeline 关联分析的 aGDS 文件</p>
+    </div>
+  </div>
+</div>
+
+<p>最终成果令人印象深刻：UK Biobank 50 万人的 WGS 数据被压缩为 23 个按染色体组织的 aGDS 文件，总体积仅 1.10 TiB，相比原始 pVCF 的 1,473.85 TiB，压缩比超过 1300 倍。基于这批文件，研究团队完成了总胆固醇的稀有变异关联分析，检出 480 个全基因组显著的编码区与非编码区关联信号。</p>
+
+<div class="stat-row">
+  <div class="stat-card">
+    <div class="stat-num">1473</div>
+    <div class="stat-lbl">原始 pVCF<br>总体积（TiB）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num">1.10</div>
+    <div class="stat-lbl">aGDS 转换后<br>总体积（TiB）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-num">480</div>
+    <div class="stat-lbl">全基因组显著<br>关联信号数</div>
+  </div>
+</div>
+
+<hr>
+
+<h2 class="st">三篇文献的共同逻辑</h2>
+
+<p>表面上看，SVCR、CRAM、vcf2agds 分别解决的是变异格式、比对格式、分析格式三个独立问题，但它们共享同一个底层逻辑：</p>
+
+<div class="kp">
+  <div class="kp-lbl">核心共识</div>
+  <p>大规模基因组数据的瓶颈已经从计算转移到了<strong>存储与数据组织</strong>。格式本身就是科学生产力——一个设计不合理的格式，会让每一次分析都付出不必要的时间和金钱代价。</p>
+</div>
+
+<p>三者互为补充：CRAM 守住比对层的存储效率；SVCR 解决变异联合调用层的规模化难题；vcf2agds 则在分析准备层实现格式的最终整合与极致压缩。三者若联合应用，可覆盖 WGS 数据管理的完整生命周期。</p>
+
+<div class="hbox">
+  <strong>对国内大型队列项目的启示：</strong>随着国家精准医学计划和各省生物样本库数据规模持续扩大，建议在项目设计阶段就将 CRAM + SVCR/VDS 或 CRAM + aGDS 纳入长期存储与分析格式规划。相关开源工具均已公开：Hail（github.com/hail-is/hail）和 vcf2agds 均可获取。
+</div>
+
+<div class="conclusion">
+  <h3>编者结语</h3>
+  <p>百万基因组不是终点，而是大规模遗传流行病学的新起点。科学能走多远，很大程度上取决于我们能把数据管理得多高效。SVCR、CRAM、aGDS，每一个格式背后都是一群工程师与科学家对"让数据真正可用"这件事的执念。</p>
+  <p class="c-sub">这场没有掌声的基础设施革命，正在悄悄决定下一个十年遗传学发现的边界。</p>
+</div>
+
+<div class="tag-row">
+  <span class="tag">#基因组学</span>
+  <span class="tag">#SVCR</span>
+  <span class="tag">#CRAM</span>
+  <span class="tag">#aGDS</span>
+  <span class="tag">#UK Biobank</span>
+  <span class="tag">#Hail</span>
+  <span class="tag">#大规模测序</span>
+  <span class="tag">#数据管理</span>
+  <span class="tag">#生信前沿</span>
+</div>
+
+</div>

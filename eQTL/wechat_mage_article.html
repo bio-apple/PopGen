@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>微信稿 - MAGE基因表达研究</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #f5f4f0;
+    font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    color: #2c2c2a;
+    line-height: 1.85;
+  }
+
+  .article-wrapper {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #ffffff;
+    min-height: 100vh;
+  }
+
+  /* Header / Cover */
+  .cover {
+    background: #1a1f2e;
+    padding: 52px 36px 44px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 280px; height: 280px;
+    border-radius: 50%;
+    background: rgba(29, 158, 117, 0.12);
+  }
+
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: 30px;
+    width: 180px; height: 180px;
+    border-radius: 50%;
+    background: rgba(83, 74, 183, 0.10);
+  }
+
+  .cover-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #5DCAA5;
+    background: rgba(29, 158, 117, 0.15);
+    border: 1px solid rgba(93, 202, 165, 0.3);
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .cover h1 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.45;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cover-sub {
+    font-size: 14px;
+    color: rgba(255,255,255,0.55);
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.5px;
+  }
+
+  .cover-meta {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cover-source {
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+  }
+
+  .cover-source span {
+    color: rgba(255,255,255,0.7);
+    font-weight: 500;
+  }
+
+  .journal-badge {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #1a1f2e;
+    background: #5DCAA5;
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+
+  /* Body */
+  .body {
+    padding: 36px 32px;
+  }
+
+  /* Lead paragraph */
+  .lead {
+    font-size: 16.5px;
+    color: #3C3489;
+    font-weight: 500;
+    line-height: 1.9;
+    padding: 20px 22px;
+    background: #EEEDFE;
+    border-left: 3px solid #7F77DD;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 32px;
+  }
+
+  /* Section headings */
+  .section-title {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1f2e;
+    margin: 36px 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-title::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 20px;
+    background: #1D9E75;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  /* Body paragraphs */
+  p {
+    font-size: 15.5px;
+    color: #3a3835;
+    line-height: 1.9;
+    margin-bottom: 16px;
+  }
+
+  /* Stats grid */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 28px 0;
+  }
+
+  .stat-card {
+    background: #f8f7f4;
+    border-radius: 10px;
+    padding: 16px 14px;
+    text-align: center;
+    border: 1px solid #e8e6de;
+  }
+
+  .stat-number {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #1D9E75;
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: #888780;
+    line-height: 1.4;
+  }
+
+  /* Highlight box */
+  .highlight-box {
+    background: linear-gradient(135deg, #E1F5EE 0%, #f0faf6 100%);
+    border: 1px solid #9FE1CB;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin: 28px 0;
+  }
+
+  .highlight-box-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #0F6E56;
+    margin-bottom: 10px;
+  }
+
+  .highlight-box p {
+    font-size: 14.5px;
+    color: #085041;
+    margin-bottom: 0;
+    line-height: 1.85;
+  }
+
+  /* Finding list */
+  .finding-list {
+    list-style: none;
+    margin: 16px 0 24px;
+  }
+
+  .finding-list li {
+    padding: 12px 14px 12px 42px;
+    position: relative;
+    font-size: 15px;
+    color: #3a3835;
+    line-height: 1.8;
+    border-bottom: 1px dashed #e8e6de;
+  }
+
+  .finding-list li:last-child {
+    border-bottom: none;
+  }
+
+  .finding-list li::before {
+    content: attr(data-num);
+    position: absolute;
+    left: 10px;
+    top: 13px;
+    width: 22px;
+    height: 22px;
+    background: #1D9E75;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+
+  /* Quote */
+  .quote-block {
+    margin: 28px 0;
+    padding: 20px 24px;
+    border-radius: 10px;
+    background: #f8f7f4;
+    border-left: 4px solid #7F77DD;
+  }
+
+  .quote-text {
+    font-size: 15px;
+    color: #444441;
+    font-style: italic;
+    line-height: 1.9;
+    margin-bottom: 8px;
+  }
+
+  .quote-author {
+    font-size: 12.5px;
+    color: #888780;
+    font-style: normal;
+  }
+
+  /* Info table */
+  .info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+  }
+
+  .info-table th {
+    background: #1a1f2e;
+    color: white;
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  .info-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #e8e6de;
+    color: #3a3835;
+    vertical-align: top;
+  }
+
+  .info-table tr:nth-child(even) td {
+    background: #f8f7f4;
+  }
+
+  /* Significance section */
+  .significance-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 20px 0;
+  }
+
+  .sig-card {
+    padding: 18px 16px;
+    border-radius: 10px;
+    border: 1px solid;
+  }
+
+  .sig-card.purple {
+    background: #EEEDFE;
+    border-color: #AFA9EC;
+  }
+
+  .sig-card.teal {
+    background: #E1F5EE;
+    border-color: #5DCAA5;
+  }
+
+  .sig-card.amber {
+    background: #FAEEDA;
+    border-color: #FAC775;
+  }
+
+  .sig-card.coral {
+    background: #FAECE7;
+    border-color: #F0997B;
+  }
+
+  .sig-card-icon {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .sig-card-title {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #1a1f2e;
+  }
+
+  .sig-card-body {
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .sig-card.purple .sig-card-body { color: #3C3489; }
+  .sig-card.teal .sig-card-body { color: #085041; }
+  .sig-card.amber .sig-card-body { color: #633806; }
+  .sig-card.coral .sig-card-body { color: #4A1B0C; }
+
+  /* Divider */
+  .divider {
+    border: none;
+    height: 1px;
+    background: #e8e6de;
+    margin: 32px 0;
+  }
+
+  /* Footer */
+  .footer {
+    background: #1a1f2e;
+    padding: 28px 32px;
+    text-align: center;
+  }
+
+  .footer p {
+    color: rgba(255,255,255,0.45);
+    font-size: 12px;
+    margin-bottom: 6px;
+    line-height: 1.7;
+  }
+
+  .footer a {
+    color: #5DCAA5;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  .bold-teal { color: #0F6E56; font-weight: 600; }
+  .bold-purple { color: #534AB7; font-weight: 600; }
+
+  /* Responsive */
+  @media (max-width: 480px) {
+    .cover h1 { font-size: 22px; }
+    .body { padding: 24px 20px; }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    .significance-grid { grid-template-columns: 1fr; }
+    .stat-number { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+<div class="article-wrapper">
+
+  <!-- Cover -->
+  <div class="cover">
+    <div class="cover-tag">基因组学前沿</div>
+    <h1>打破欧洲中心论：<br>首个全球多族裔基因表达图谱震撼发布</h1>
+    <p class="cover-sub">MAGE 数据集 · 731人 · 26个种群 · 5大洲</p>
+    <div class="cover-meta">
+      <div class="cover-source">来源：<span>Johns Hopkins University</span> · 发表于 <span>Nature</span></div>
+      <div class="journal-badge">Nature 2024</div>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <div class="body">
+
+    <p class="lead">
+      人类基因组有99.9%是相同的——但那0.1%的差异，决定了我们的身高、激素水平乃至对疾病的易感性。然而数十年来，遗传学研究几乎只盯着一类人：欧洲裔。这一偏见，正被一项里程碑式研究彻底颠覆。
+    </p>
+
+    <div class="section-title">研究背景：一个持续了数十年的偏见</div>
+
+    <p>
+      基因表达（Gene Expression）是DNA上的基因被"读取"并转录为RNA、进而指导蛋白质合成的过程。遗传变异会影响基因表达的水平与方式，从而深刻影响人体性状和疾病风险。
+    </p>
+
+    <p>
+      问题在于，过去研究这一过程的数据，绝大多数来自<span class="bold-purple">欧洲裔人群</span>。当科学家用这些数据建立模型去预测南亚人、东亚人或拉丁美洲人的基因功能时，结果往往并不可靠。这不仅是科学效度问题，更是医学公平性问题。
+    </p>
+
+    <div class="quote-block">
+      <p class="quote-text">
+        "我们现在有了迄今为止覆盖最广的全球视角，可以看到基因表达如何在此前研究严重不足的人群中塑造人类多样性。"
+      </p>
+      <p class="quote-author">— Rajiv McCoy，通讯作者，约翰斯·霍普金斯大学遗传学家</p>
+    </div>
+
+    <div class="section-title">MAGE：一个真正"全球化"的数据集</div>
+
+    <p>
+      为解决上述问题，研究团队构建了 <span class="bold-teal">MAGE（多祖先基因表达分析）</span>数据集——一个开放获取的RNA测序资源，覆盖来自1000 Genomes Project的731名志愿者。
+    </p>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">731</div>
+        <div class="stat-label">受试者总数<br>（淋巴母细胞系）</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">26</div>
+        <div class="stat-label">覆盖种群数量<br>全球主要人群</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">5</div>
+        <div class="stat-label">大洲分布<br>真正全球视野</div>
+      </div>
+    </div>
+
+    <p>
+      数据采集自淋巴母细胞系（LCL），所有样本在同一实验室的17个批次中完成测序，并通过分层处理规避批次混淆效应，确保跨人群比较的科学严谨性。
+    </p>
+
+    <div class="section-title">核心发现：多样性在"内部"，而非"之间"</div>
+
+    <ul class="finding-list">
+      <li data-num="1">
+        <strong>基因表达差异主要存在于群体内部：</strong>92%的基因表达变异、95%的剪接变异，都来自同一人群内部个体间的差异，而非不同人群之间的差异——与DNA序列变异的分布模式高度一致。
+      </li>
+      <li data-num="2">
+        <strong>识别出超过1.5万个因果eQTL：</strong>研究精准映射了15,000余个顺式表达数量性状基因座（cis-eQTL）和16,000余个顺式剪接QTL（cis-sQTL），并在表观基因组水平上得到验证。
+      </li>
+      <li data-num="3">
+        <strong>发现了"种群特有"的调控变异：</strong>其中1,310个eQTL和1,657个sQTL基本上是此前未被充分研究的人群所"私有"的，在以欧洲裔为主的研究中从未被发现。
+      </li>
+      <li data-num="4">
+        <strong>颠覆"种群特异性效应"的旧观念：</strong>过去研究认为某些eQTL效应只在特定人群中出现，但MAGE的数据表明，这种"特异性"大多是统计分辨率不足或同一基因存在多个独立eQTL未被检测到所造成的假象。因果eQTL的效应方向与大小在各人群中高度一致。
+      </li>
+    </ul>
+
+    <div class="highlight-box">
+      <div class="highlight-box-title">🔬 关键技术突破</div>
+      <p>多样化队列不仅扩大了样本覆盖面，更显著提升了<strong>精细定位（fine-mapping）</strong>能力。历史上更丰富的重组事件被记录在多祖先基因组中，使研究者能在连锁不平衡（LD）背景下更准确地锁定真正的因果变异，而非统计上相关的"搭车"变异。</p>
+    </div>
+
+    <div class="section-title">为什么这项研究意义深远？</div>
+
+    <div class="significance-grid">
+      <div class="sig-card purple">
+        <div class="sig-card-icon">💊</div>
+        <div class="sig-card-title">精准医疗平等化</div>
+        <p class="sig-card-body">若仅用欧洲裔数据预测南亚人的基因表达，结果往往不可靠。MAGE为各族裔人群建立可信预测模型奠定了基础。</p>
+      </div>
+      <div class="sig-card teal">
+        <div class="sig-card-icon">🧬</div>
+        <div class="sig-card-title">进化生物学洞见</div>
+        <p class="sig-card-body">通过分析不同人群共有与特有的调控变异，科学家得以追溯自然选择如何在漫长进化中塑造基因表达调控机制。</p>
+      </div>
+      <div class="sig-card amber">
+        <div class="sig-card-icon">🏥</div>
+        <div class="sig-card-title">疾病风险预测</div>
+        <p class="sig-card-body">结合基因组序列与表达数据，可识别身高、激素水平和疾病易感性等性状背后的遗传调控变异，包括此前因人群覆盖不足而遗漏的变异。</p>
+      </div>
+      <div class="sig-card coral">
+        <div class="sig-card-icon">🌍</div>
+        <div class="sig-card-title">开放科学范本</div>
+        <p class="sig-card-body">所有数据完全开放获取，为全球科学界提供可重复使用的包容性资源，推动遗传学研究真正走向全人类。</p>
+      </div>
+    </div>
+
+    <div class="section-title">局限性与未来方向</div>
+
+    <p>
+      研究团队坦承，现有数据集仍存在缺口：<span class="bold-purple">中东、澳大利亚、太平洋岛国</span>等地区的样本仍然稀缺，非洲和美洲的代表性也有待加强。这些空白意味着MAGE的研究结论尚不能完全代表全人类基因表达的多样性。
+    </p>
+
+    <p>
+      尽管如此，研究团队将这项工作定位为"概念验证"：它证明了纳入多样性人群不仅在道德层面是正确的，在科学上也确实更有价值——更高的精细定位分辨率、更多被发现的调控变异、更普遍适用的研究结论。
+    </p>
+
+    <div class="quote-block">
+      <p class="quote-text">
+        "整个领域正朝着令人振奋的方向前进，将多样化个体纳入人类遗传学研究。我们的工作是对其他科学家的示范：我们能做到这一点，我们应该这样做，而且这样做是有价值的。"
+      </p>
+      <p class="quote-author">— Dylan Taylor，第一作者，约翰斯·霍普金斯大学生物学博士生</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section-title">研究信息一览</div>
+
+    <table class="info-table">
+      <tr>
+        <th>项目</th>
+        <th>详情</th>
+      </tr>
+      <tr>
+        <td>论文标题</td>
+        <td>Sources of gene expression variation in a globally diverse human cohort</td>
+      </tr>
+      <tr>
+        <td>发表期刊</td>
+        <td>Nature, Vol. 632, pp. 122–130 (2024)</td>
+      </tr>
+      <tr>
+        <td>发表日期</td>
+        <td>2024年7月17日</td>
+      </tr>
+      <tr>
+        <td>通讯作者</td>
+        <td>Rajiv C. McCoy（约翰斯·霍普金斯大学）</td>
+      </tr>
+      <tr>
+        <td>第一作者</td>
+        <td>Dylan J. Taylor</td>
+      </tr>
+      <tr>
+        <td>数据集名称</td>
+        <td>MAGE（Multi-ancestry Analysis of Gene Expression）</td>
+      </tr>
+      <tr>
+        <td>数据来源</td>
+        <td>1000 Genomes Project 淋巴母细胞系 RNA-seq</td>
+      </tr>
+      <tr>
+        <td>DOI</td>
+        <td>10.1038/s41586-024-07708-2</td>
+      </tr>
+    </table>
+
+    <p style="font-size:13px; color:#888780; margin-top:20px; text-align:center;">
+      本文仅供学术传播，如需引用请以原始论文为准。
+    </p>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>原始论文发表于 <a href="https://doi.org/10.1038/s41586-024-07708-2">Nature (2024)</a></p>
+    <p>Taylor et al. · Johns Hopkins University · DOI: 10.1038/s41586-024-07708-2</p>
+  </div>
+
+</div>
+</body>
+</html>
